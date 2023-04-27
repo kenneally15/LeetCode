@@ -29,7 +29,31 @@ class Solution:
         return rev
 
 
+class Solution:
+    def reverse(self, x: int) -> int:
+        
+        X = str(x); 
+        Y = ""
+        
+        #Check negative
+        if X[0] == "-":
+            Y += "-"
+            X = X[1:]
 
+        #Reverse digits
+        for i in range(len(X)):
+            Y += X[len(X)-i-1]
+
+        #Check bounds
+        if -2**(31) <= int(Y) <= 2**(31) - 1:
+            return int(Y)
+        
+        return 0
+
+
+        
+        
+        
         
         
         

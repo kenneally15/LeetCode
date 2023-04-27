@@ -40,4 +40,3 @@ class Solution:
         return (x == reverse or x == reverse//10)
             
 
-
