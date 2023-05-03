@@ -25,7 +25,7 @@ class Solution:
             if numeral.get(s[i:i+2]) != None:
                 output += numeral[s[i:i+2]]
                 i += 2
-            elif numeral.get(s[i]) != None:
+            else:
                 output += numeral[s[i]]
                 i += 1
         
