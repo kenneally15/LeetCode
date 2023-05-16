@@ -3,7 +3,7 @@ class Solution:
 
         for i in range(len(haystack)-len(needle)+1):
 
-            j = 0
+            j = 0   #offset
             while j < len(needle) and needle[j] == haystack[i+j]:
                 j+=1
             
