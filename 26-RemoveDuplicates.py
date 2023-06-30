@@ -8,7 +8,5 @@ class Solution:
             if nums[insertIndex-1] != nums[i]:
                 nums[insertIndex] = nums[i]
                 insertIndex+=1
-            
-            #nums[i] = "_"
         
         return insertIndex
