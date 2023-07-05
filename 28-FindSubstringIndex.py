@@ -7,6 +7,7 @@ class Solution:
             while j < len(needle) and needle[j] == haystack[i+j]:
                 j+=1
             
+            #found full substring
             if j == len(needle):
                 return i
             
